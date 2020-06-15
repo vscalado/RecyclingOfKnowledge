@@ -3,7 +3,11 @@ package br.com.treinaweb.main;
 import java.util.Scanner;
 
 public class Main {
+
+    static int resultado;
+
     public static void main(String[] args) {
+        System.out.println(resultado);
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Digite o primeiro numero: ");
         int numero1 = scanner1.nextInt();
@@ -18,7 +22,7 @@ public class Main {
         //System.out.println(numero2);
         //System.out.println(String.format("Você que fazer a operação %d %c %d", numero1, operacao, numero2));
 
-        int resultado = 0;
+        //int resultado = 0;
 
         if (operacao == '+') {
             resultado = numero1 + numero2;
