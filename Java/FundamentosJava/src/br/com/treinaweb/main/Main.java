@@ -24,7 +24,7 @@ public class Main {
 
         //int resultado = 0;
 
-        if (operacao == '+') {
+        /*if (operacao == '+') {
             resultado = numero1 + numero2;
         }else if (operacao == '-'){
             resultado = numero1 - numero2;
@@ -34,7 +34,26 @@ public class Main {
             resultado = numero1 / numero2;
         }else {
             System.out.println("Digite uma operação válida");
+        }*/
+
+        switch (operacao) {
+            case '+':
+                resultado = numero1 + numero2;
+                break;
+            case '-':
+                resultado = numero1 - numero2;
+                break;
+            case '*':
+                resultado = numero1 * numero2;
+                break;
+            case '/':
+                resultado = numero1 / numero2;
+                break;
+            default:
+                System.out.println("Operação Inválida");
+                break;
         }
+
         System.out.println(String.format("%d %c %d = %d", numero1, operacao, numero2, resultado));
 
         scanner1.close();
